@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+	<head><title>Flask with Jinjia</title></head>
+	<body>
+		<ul>
+			<li><img src="{{ url_for('static', filename='cumdy-logo2') }}"></li>
+			{# This is comment block. We will set some variables in the jinja template. #}
+			{% set name = "Wint Theingi Hlaing" %}
+			{% set user_name = "winttheingihlaing" %}
+			<li>{{ name }}</li>
+			<li><a href="http://github.com/{{user_name}}">Github</a></li>
+			<li><a href="http://{{user_name}}.herokuapp.com">Heroku</a></li>
+		</ul>
+	</body>
+</html>
+
